@@ -1,0 +1,16 @@
+{
+    "name": "vendor/your-project",
+    "description": "To be more organize",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joshua Amuin",
+            "email": "joshua.amuin@lspu.edu.ph"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "kreait/firebase-php": "^5.0"
+    }
+}
