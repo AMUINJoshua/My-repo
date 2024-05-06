@@ -11,7 +11,7 @@
 </head>
 <body>
     <?php include 'header.php'; ?>
-    <h1>View Files</h1>
+    <h1>Views Files</h1>
 
   <!-- Placeholder for displaying files -->
   <div id="fileList"></div>
