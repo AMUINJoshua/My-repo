@@ -35,13 +35,14 @@ const firebaseConfig = {
   }
   var Digit;
   function uploadFile(){
-      let storageRef = firebase.storage().ref("files/"+ fileName);
+      let storageRef = firebase.storage().ref(fileName);
       let uploadTask = storageRef.put(fileItem);
   
       uploadTask.on("state_changed", (snapshot)=>{
           percentVal = Math.floor((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
           uploadPercentage.innerHTML = percentVal + "%";
           progress.style.width = percentVal + "%";
+          
       },(error)=>{
           console.log("Error is ", error);
       },()=>{
